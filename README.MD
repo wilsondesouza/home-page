@@ -9,7 +9,7 @@ Atualmente o site não permite mudança de favoritos de maneira interativa pelo 
 Por isso, sinta-se livre para baixar e alterá-lo conforme sua necessidade.
 
 ### Observações
-
+Site propositalmente sem nenhuma responsividade. Foi construído pensando em se adequar apenas a desktops.
 Os links e imagens utilizados nesta versão foram gerados de maneira randômica
 
 ## 💻 Ferramentas utilizadas
