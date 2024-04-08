@@ -1,0 +1,162 @@
+video {
+    z-index: -999;
+    object-fit: cover;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+}
+
+/*-------------*/
+/* Grid Layout */
+/*-------------*/
+
+.parent {
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    grid-template-rows: 2fr 1fr 4fr 1fr;
+    grid-column-gap: 20px;
+    padding: 2rem 5rem 1rem;
+}
+
+/*--------------*/
+/* Clock Button */
+/*--------------*/
+
+.wrapper {
+    height: 90px;
+    width: 350px;
+    background: linear-gradient(135deg, #14ffe9, #ffeb3b, #ff00e0);
+    border-radius: 10px;
+    cursor: default;
+    animation: animate 1.5s linear infinite;
+    justify-self: center;
+}
+
+.wrapper .display,
+.wrapper span {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.wrapper .display {
+    z-index: 999;
+    height: 85px;
+    width: 345px;
+    background: #292929;
+    border-radius: 6px;
+    text-align: center;
+}
+
+.display #time {
+    line-height: 85px;
+    color: #fff;
+    font-size: 50px;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+@keyframes animate {
+    100% {
+        filter: hue-rotate(360deg);
+    }
+}
+
+.wrapper span {
+    height: 100%;
+    width: 100%;
+    border-radius: 10px;
+    background: inherit;
+}
+
+.wrapper span:first-child {
+    filter: blur(7px);
+}
+
+.wrapper span:last-child {
+    filter: blur(20px);
+}
+
+/*---------------*/
+/* Reward Button */
+/*---------------*/
+
+.reward {
+    padding: 1rem 5rem;
+    position: absolute;
+    right: 0rem;
+}
+
+.reward button {
+    background-color: transparent;
+    border: none;
+}
+
+.reward button img {
+    height: 32px;
+    cursor: pointer;
+}
+
+/*------------*/
+/* Search Bar */
+/*------------*/
+
+.wrapper2 {
+    position: static;
+    height: 49px;
+    width: 985px;
+    background: linear-gradient(135deg, #14ffe9, #ffeb3b, #ff00e0);
+    border-radius: 20px;
+    cursor: default;
+    animation: animate 1.5s linear infinite;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.search-bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: 5px solid #292929;
+    border-radius: 20px;
+    background-color: #292929;
+    margin: .55rem;
+}
+
+fluent-button.search-btn.stealth {
+    padding: 0px .5rem;
+}
+
+.search-bar a {
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+}
+
+.search-bar button {
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
+}
+
+.search-bar button img {
+    width: 32px;
+}
+
+.search-bar form input {
+    border: none;
+    width: 55rem;
+    background-color: transparent;
+    color: #ffffff;
+    font-size: 1rem;
+}
+
+.search-bar form input:focus {
+    outline: none;
+}

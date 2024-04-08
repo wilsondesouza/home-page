@@ -124,26 +124,31 @@ function criarBotoes(containerClass, data) {
     const container = document.querySelector('.' + containerClass);
 
     for (let key in data) {
-        const button = document.createElement("button");
-        const link = document.createElement("a");
+        const card = document.createElement('div');
+        const card_back = document.createElement('div');
+        const a = document.createElement("a");
         const img = document.createElement("img");
         const p = document.createElement("p");
 
-        link.href = data[key].urlPath;
-        link.target = "_blank";
+        card.setAttribute("class", "card-botoes");
+        card_back.setAttribute("class", "card_back");
+        a.href = data[key].urlPath;
+        a.target = "_blank";
         img.src = data[key].imagePath;
         img.alt = key;
         p.textContent = key;
 
-        link.appendChild(img);
-        button.appendChild(link);
-        button.appendChild(p);
-        container.appendChild(button);
+        container.appendChild(card);
+        card.appendChild(a);
+        a.appendChild(img);
+        card.appendChild(card_back)
+        card.appendChild(p);
+        
     }
 }
 
 // Chamar a função para cada lista de botões
 criarBotoes("botoes-estudos", listaEstudos);
 criarBotoes("botoes-programacao", listaProgramação);
-criarBotoes("botoes-trabalho", listaTrabalho);
 criarBotoes("botoes-inteligencia-artificial", listaInteligenciaArtificial);
+criarBotoes("botoes-trabalho", listaTrabalho);
