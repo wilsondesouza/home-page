@@ -17,8 +17,6 @@ video {
 .parent {
     display: grid;
     grid-template-columns: 1fr 3fr 1fr;
-    grid-template-rows: 2fr 1fr 4fr 1fr;
-    grid-column-gap: 20px;
     padding: 2rem 5rem 1rem;
 }
 
@@ -36,12 +34,12 @@ video {
     justify-self: center;
 }
 
-.wrapper .display,
 .wrapper span {
     position: absolute;
-    top: 50%;
-    left: 50%;
+    top: 45%;
+    left: 48.5%;
     transform: translate(-50%, -50%);
+    z-index: -1;
 }
 
 .wrapper .display {
@@ -107,7 +105,6 @@ video {
 /*------------*/
 
 .wrapper2 {
-    position: static;
     height: 49px;
     width: 985px;
     background: linear-gradient(135deg, #14ffe9, #ffeb3b, #ff00e0);
@@ -117,6 +114,7 @@ video {
     display: flex;
     align-items: center;
     justify-content: center;
+    margin: 2.5rem 0rem 1.5rem;
 }
 
 .search-bar {
