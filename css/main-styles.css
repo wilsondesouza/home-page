@@ -102,6 +102,7 @@
 .sections {
     display: flex;
     justify-content: center;
+    z-index: 1;
 }
 
 .section1,
@@ -114,7 +115,7 @@
     align-items: center;
     border-radius: 20px;
     background-color: #292929;
-    z-index: -2;
+    z-index: 0;
 }
 
 .text {
