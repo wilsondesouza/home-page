@@ -1,0 +1,19 @@
+@media (max-width:425px){
+
+    .hotspot{
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    margin: -3rem 0 0 0;
+    border-radius: 20px;
+    width: 100%;
+}
+
+    .wrapper2{
+        margin: 0rem 0rem 0rem;
+    }
+
+    .card {
+        margin: 0 30px 15px 0;
+    }
+}

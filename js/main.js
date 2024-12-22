@@ -1,19 +1,3 @@
-// Função para capturar, atualizar e persistir o Relógio em tempo real.
-function updateClock() {
-    let now = new Date();
-    let hours = now.getHours();
-    let minutes = now.getMinutes();
-
-    hours = hours < 10 ? "0" + hours : hours;
-    minutes = minutes < 10 ? "0" + minutes : minutes;
-
-    let timeString = hours + ":" + minutes;
-    document.querySelector(".display #time").innerHTML = timeString;
-}
-setInterval(updateClock, 5000);
-updateClock();
-
-
 // Lista de Objetos (atalhos e identificação)
 const listaEstudos = {
     'King': { urlPath: 'http://hikfuz.ly/henbi', imagePath: 'https://cdn.pixabay.com/photo/2019/04/19/17/48/cake-balls-4139982_960_720.jpg' },
@@ -75,6 +59,20 @@ const listaInteligenciaArtificial = {
     'Mathis': { urlPath: 'http://ag.jp/lehhu', imagePath: 'https://cdn.pixabay.com/photo/2017/07/11/18/07/bolivia-2494518_960_720.jpg' },
 }
 
+// Função para capturar, atualizar e persistir o Relógio em tempo real.
+function updateClock() {
+    let now = new Date();
+    let hours = now.getHours();
+    let minutes = now.getMinutes();
+
+    hours = hours < 10 ? "0" + hours : hours;
+    minutes = minutes < 10 ? "0" + minutes : minutes;
+
+    let timeString = hours + ":" + minutes;
+    document.querySelector(".display #time").innerHTML = timeString;
+}
+setInterval(updateClock, 5000);
+updateClock();
 
 // Função para esconder e/ou visualizar as seções através dos botões
 document.addEventListener('DOMContentLoaded', function () {
@@ -117,7 +115,6 @@ document.addEventListener('DOMContentLoaded', function () {
         });
     }
 });
-
 
 // Função para gerar botões para cada lista de objetos e adicioná-los às seções correspondentes
 function criarBotoes(containerClass, data) {

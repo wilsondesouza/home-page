@@ -2,6 +2,11 @@
 /* Hot Spot Buttons */
 /*------------------*/
 
+.pre-hotspot{
+    display: grid;
+    align-items: start;
+}
+
 .hotspot {
     display: flex;
     align-items: center;

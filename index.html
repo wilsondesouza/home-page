@@ -17,7 +17,8 @@
     <meta property="og:description" content="Home Page - Lugar de reunião dos principais sites e aplicativos." />
     <!-- description shown in the actual shared post -->
     <meta property="og:image" content="assets/images/og-image.png" /> <!-- image link, make sure it's jpg -->
-    <meta property="og:url" content="https://wilsondesouza.github.io/home-page/" /> <!-- where do you want your post to link to -->
+    <meta property="og:url" content="https://wilsondesouza.github.io/home-page/" />
+    <!-- where do you want your post to link to -->
     <meta name="twitter:card" content="summary_large_image"> <!-- to have large image post format in Twitter -->
 
     <!-- Webpage Title -->
@@ -27,6 +28,7 @@
     <link href="css/main-styles.css" rel="stylesheet">
     <link href="css/others-styles.css" rel="stylesheet">
     <link href="css/reset.css" rel="stylesheet">
+    <link href="css/responsive.css" rel="stylesheet">
 
     <!-- Favicon  -->
     <link rel="icon" href="assets/images/icon.png">
@@ -39,24 +41,31 @@
         Your browser does not support the video tag.
     </video>
 
-    <div class="reward">
-        <a rel="noopener" href="https://rewards.bing.com/" target="_blank"><button type="button"><img
-                    alt="Microsoft Rewards" src="assets/svgs/reward.svg" /></button></a>
-    </div>
+
 
     <div class="parent">
 
         <div></div>
-        <div class="wrapper">
-            <div class="display">
-                <div id="time"></div>
+
+        <div class="pre-wrapper">
+            <div class="wrapper">
+                <div class="display">
+                    <div id="time"></div>
+                </div>
+                <span></span>
+                <span></span>
             </div>
-            <span></span>
-            <span></span>
         </div>
 
+        <div class="pre-reward">
+            <div class="reward">
+                <a rel="noopener" href="https://rewards.bing.com/" target="_blank"><button type="button"><img
+                            alt="Microsoft Rewards" src="assets/svgs/reward.svg" /></button></a>
+            </div>
+        </div>
         <div></div>
-        <div></div>
+
+
         <div class="wrapper2">
             <div class="search-bar">
 
@@ -77,85 +86,88 @@
                             alt="Abrir o Copilot"></button></a>
             </div>
         </div>
+
+
         <div></div>
         <div></div>
 
-        <div class="hotspot">
-            <div class="card">
-                <button type="button" class="icon btn-show-section1">
-                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" height="38px"
-                        width="38px" version="1.1" id="study" viewBox="0 0 471.701 471.701" xml:space="preserve">
-                        <linearGradient id="gradientColor">
-                            <stop offset="5%" stop-color="#7eaaff"></stop>
-                            <stop offset="95%" stop-color="#ff48fb"></stop>
-                        </linearGradient>
-                        <g>
-                            <img alt="Estudos" src="https://my-page-home.netlify.app/assets/images/study.png" />
+            <div class="hotspot">
+                <div class="card">
+                    <button type="button" class="icon btn-show-section1">
+                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" height="38px"
+                            width="38px" version="1.1" id="study" viewBox="0 0 471.701 471.701" xml:space="preserve">
+                            <linearGradient id="gradientColor">
+                                <stop offset="5%" stop-color="#7eaaff"></stop>
+                                <stop offset="95%" stop-color="#ff48fb"></stop>
+                            </linearGradient>
+                            <g>
+                                <img alt="Estudos" src="https://my-page-home.netlify.app/assets/images/study.png" />
 
-                        </g>
-                    </svg>
-                </button>
-                <p class="title">Estudos</p>
-                <p class="text">Todos os seus sites favoritos em um só lugar.</p>
-            </div>
+                            </g>
+                        </svg>
+                    </button>
+                    <p class="title">Estudos</p>
+                    <p class="text">Todos os seus sites favoritos em um só lugar.</p>
+                </div>
 
-            <div class="card">
-                <button type="button" class="icon btn-show-section2">
-                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" height="38px"
-                        width="38px" version="1.1" id="programming" viewBox="0 0 471.701 471.701" xml:space="preserve">
-                        <linearGradient id="gradientColor">
-                            <stop offset="5%" stop-color="#7eaaff"></stop>
-                            <stop offset="95%" stop-color="#ff48fb"></stop>
-                        </linearGradient>
-                        <g>
-                            <img alt="Programação" src="https://my-page-home.netlify.app/assets/images/code.png" />
+                <div class="card">
+                    <button type="button" class="icon btn-show-section2">
+                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" height="38px"
+                            width="38px" version="1.1" id="programming" viewBox="0 0 471.701 471.701"
+                            xml:space="preserve">
+                            <linearGradient id="gradientColor">
+                                <stop offset="5%" stop-color="#7eaaff"></stop>
+                                <stop offset="95%" stop-color="#ff48fb"></stop>
+                            </linearGradient>
+                            <g>
+                                <img alt="Programação" src="https://my-page-home.netlify.app/assets/images/code.png" />
 
-                        </g>
-                    </svg>
-                </button>
-                <p class="title">Programação</p>
-                <p class="text">Todos os seus sites favoritos em um só lugar.</p>
-            </div>
+                            </g>
+                        </svg>
+                    </button>
+                    <p class="title">Programação</p>
+                    <p class="text">Todos os seus sites favoritos em um só lugar.</p>
+                </div>
 
-            <div class="card">
-                <button type="button" class="icon btn-show-section3">
-                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" height="38px"
-                        width="38px" version="1.1" id="artificial-intelligence" viewBox="0 0 471.701 471.701"
-                        xml:space="preserve">
-                        <linearGradient id="gradientColor">
-                            <stop offset="5%" stop-color="#7eaaff"></stop>
-                            <stop offset="95%" stop-color="#ff48fb"></stop>
-                        </linearGradient>
-                        <g>
-                            <img alt="Inteligência Artificial"
-                                src="https://my-page-home.netlify.app/assets/images/artificial-intelligence.png" />
+                <div class="card">
+                    <button type="button" class="icon btn-show-section3">
+                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" height="38px"
+                            width="38px" version="1.1" id="artificial-intelligence" viewBox="0 0 471.701 471.701"
+                            xml:space="preserve">
+                            <linearGradient id="gradientColor">
+                                <stop offset="5%" stop-color="#7eaaff"></stop>
+                                <stop offset="95%" stop-color="#ff48fb"></stop>
+                            </linearGradient>
+                            <g>
+                                <img alt="Inteligência Artificial"
+                                    src="https://my-page-home.netlify.app/assets/images/artificial-intelligence.png" />
 
-                        </g>
-                    </svg>
-                </button>
-                <p class="title">Inteligência Artificial</p>
-                <p class="text">Todos os seus sites favoritos em um só lugar.</p>
-            </div>
+                            </g>
+                        </svg>
+                    </button>
+                    <p class="title">Inteligência Artificial</p>
+                    <p class="text">Todos os seus sites favoritos em um só lugar.</p>
+                </div>
 
-            <div class="card">
-                <button type="button" class="icon btn-show-section4">
-                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" height="38px"
-                        width="38px" version="1.1" id="jobs" viewBox="0 0 471.701 471.701" xml:space="preserve">
-                        <linearGradient id="gradientColor">
-                            <stop offset="5%" stop-color="#7eaaff"></stop>
-                            <stop offset="95%" stop-color="#ff48fb"></stop>
-                        </linearGradient>
-                        <g>
-                            <img alt="Trabalhos" src="https://my-page-home.netlify.app/assets/images/job.png" />
+                <div class="card">
+                    <button type="button" class="icon btn-show-section4">
+                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" height="38px"
+                            width="38px" version="1.1" id="jobs" viewBox="0 0 471.701 471.701" xml:space="preserve">
+                            <linearGradient id="gradientColor">
+                                <stop offset="5%" stop-color="#7eaaff"></stop>
+                                <stop offset="95%" stop-color="#ff48fb"></stop>
+                            </linearGradient>
+                            <g>
+                                <img alt="Trabalhos" src="https://my-page-home.netlify.app/assets/images/job.png" />
 
-                        </g>
-                    </svg>
-                </button>
-                <p class="title">Trabalhos</p>
-                <p class="text">Todos os seus sites favoritos em um só lugar.</p>
-            </div>
-
+                            </g>
+                        </svg>
+                    </button>
+                    <p class="title">Trabalhos</p>
+                    <p class="text">Todos os seus sites favoritos em um só lugar.</p>
+                </div>
         </div>
+
         <div></div>
         <div></div>
         <div class="sections">
