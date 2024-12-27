@@ -1,19 +1,63 @@
-@media (max-width:425px){
+/*-------------*/
+/*  Responsive */
+/*-------------*/
 
-    .hotspot{
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
-    margin: -3rem 0 0 0;
-    border-radius: 20px;
-    width: 100%;
-}
+/* Ajustes para telas menores que 768px */
+@media (max-width: 768px) {
+    .parent {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+    }
 
-    .wrapper2{
-        margin: 0rem 0rem 0rem;
+    .hotspot {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 1rem;
+        width: 100%;
+        margin: 0;
     }
 
     .card {
-        margin: 0 30px 15px 0;
+        width: 100%;
+        max-width: 300px;
+        height: auto;
+    }
+
+    .wrapper2 {
+        width: 90%;
+        margin: 1rem auto;
+    }
+
+    .search-bar {
+        width: 98%;
+    }
+
+    .search-bar form input {
+        width: calc(100% - 50px);
+    }
+
+    .section1,
+    .section2,
+    .section3,
+    .section4 {
+        width: 90%;
+        height: auto;
+        margin-bottom: 1rem;
+        padding: 1rem;
+    }
+
+    .botoes-estudos img,
+    .botoes-programacao img,
+    .botoes-trabalho img,
+    .botoes-inteligencia-artificial img {
+        width: 50px;
+        height: 50px;
+    }
+
+    .card-botoes {
+        width: 4rem;
+        height: 5rem;
     }
 }

@@ -133,6 +133,7 @@ function criarBotoes(containerClass, data) {
         a.target = "_blank";
         img.src = data[key].imagePath;
         img.alt = key;
+        img.loading = "lazy";
         p.textContent = key;
 
         container.appendChild(card);

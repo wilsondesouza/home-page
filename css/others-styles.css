@@ -1,3 +1,7 @@
+/*-------------*/
+/*  Background */
+/*-------------*/
+
 video {
     z-index: -999;
     object-fit: fill;
@@ -116,8 +120,8 @@ video {
 /*------------*/
 
 .wrapper2 {
-    height: 49px;
-    width: 985px;
+    height: 3.063rem;
+    width: 61.563rem;
     background: linear-gradient(135deg, #14ffe9, #ffeb3b, #ff00e0);
     border-radius: 20px;
     cursor: default;
