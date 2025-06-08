@@ -24,10 +24,16 @@
     <!-- Webpage Title -->
     <title>Home Page</title>
 
+    <!-- Google Fonts CSS -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+
     <!-- Personal -->
-    <link href="css/main-styles.css" rel="stylesheet">
-    <link href="css/others-styles.css" rel="stylesheet">
-    <link href="css/reset.css" rel="stylesheet">
+    <link href="css/styles.css" rel="stylesheet">
+    <link href="css/search-bar.css" rel="stylesheet">
+    <link href="css/relogio.css" rel="stylesheet">
+    <link href="css/cards.css" rel="stylesheet">
+    <link href="css/buttons.css" rel="stylesheet">
     <link href="css/responsive.css" rel="stylesheet">
 
     <!-- Favicon  -->
@@ -35,23 +41,20 @@
 </head>
 
 <body>
-    <!-- Background video that loops and autoplays -->
-    <video loop autoplay preload="auto" playsinline>
-        <source src="assets/videos/background.webm" type="video/webm">
-        Your browser does not support the video tag.
-    </video>
-
     <div class="parent">
-        <div></div>
+
+        <!-- Botão de alternância de tema -->
+        <button id="toggle-theme" aria-label="Alternar modo claro/escuro">
+            <span id="theme-icon" style="font-size:1.5rem;">🌙</span>
+        </button>
 
         <!-- Wrapper for the clock display -->
         <div class="pre-wrapper">
             <div class="wrapper">
                 <div class="display">
                     <div id="time"></div>
+                    <div id="date"></div>
                 </div>
-                <span></span>
-                <span></span>
             </div>
         </div>
 
@@ -65,7 +68,6 @@
                 </a>
             </div>
         </div>
-        <div></div>
 
         <!-- Search bar with Google search and Bing Copilot button -->
         <div class="wrapper2">
@@ -74,7 +76,7 @@
                     icon-only="" title="Pesquisa" aria-label="Pesquisa" appearance="stealth"
                     data-t="{&quot;n&quot;:&quot;searchinput&quot;,&quot;b&quot;:0}">
                     <svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                        <path fill="#ffffff"
+                        <path
                             d="M10 2.75a7.25 7.25 0 015.63 11.82l4.9 4.9a.75.75 0 01-.98 1.13l-.08-.07-4.9-4.9A7.25 7.25 0 1110 2.75zm0 1.5a5.75 5.75 0 100 11.5 5.75 5.75 0 000-11.5z">
                         </path>
                     </svg>
@@ -91,101 +93,64 @@
             </div>
         </div>
 
-        <div></div>
-        <div></div>
-
         <!-- Hotspot section with cards for different categories -->
         <div class="hotspot">
             <div class="card">
-                <button type="button" class="icon btn-show-section1">
-                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" height="38px"
-                        width="38px" version="1.1" id="study" viewBox="0 0 471.701 471.701" xml:space="preserve">
-                        <linearGradient id="gradientColor">
-                            <stop offset="5%" stop-color="#7eaaff"></stop>
-                            <stop offset="95%" stop-color="#ff48fb"></stop>
-                        </linearGradient>
-                        <g>
-                            <img alt="Estudos" src="assets/images/study.png" />
-                        </g>
-                    </svg>
+                <button type="button" class="icon btn-show-section1"
+                    aria-label="Estudos: Acesse seus sites de estudo favoritos">
+                    <img alt="Estudos" src="assets/images/study.png" />
                 </button>
                 <p class="title">Estudos</p>
                 <p class="text">Todos os seus sites favoritos em um só lugar.</p>
             </div>
 
             <div class="card">
-                <button type="button" class="icon btn-show-section2">
-                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" height="38px"
-                        width="38px" version="1.1" id="programming" viewBox="0 0 471.701 471.701" xml:space="preserve">
-                        <linearGradient id="gradientColor">
-                            <stop offset="5%" stop-color="#7eaaff"></stop>
-                            <stop offset="95%" stop-color="#ff48fb"></stop>
-                        </linearGradient>
-                        <g>
-                            <img alt="Programação" src="assets/images/code.png" />
-                        </g>
-                    </svg>
+                <button type="button" class="icon btn-show-section2"
+                    aria-label="Programação: Acesse seus sites de programação favoritos">
+                    <img alt="Programação" src="assets/images/code.png" />
                 </button>
                 <p class="title">Programação</p>
                 <p class="text">Todos os seus sites favoritos em um só lugar.</p>
             </div>
 
             <div class="card">
-                <button type="button" class="icon btn-show-section3">
-                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" height="38px"
-                        width="38px" version="1.1" id="artificial-intelligence" viewBox="0 0 471.701 471.701"
-                        xml:space="preserve">
-                        <linearGradient id="gradientColor">
-                            <stop offset="5%" stop-color="#7eaaff"></stop>
-                            <stop offset="95%" stop-color="#ff48fb"></stop>
-                        </linearGradient>
-                        <g>
-                            <img alt="Inteligência Artificial"
-                                src="assets/images/artificial-intelligence.png" />
-                        </g>
-                    </svg>
+                <button type="button" class="icon btn-show-section3"
+                    aria-label="Inteligência Artificial: Acesse seus sites de IA favoritos">
+                    <img alt="Inteligência Artificial" src="assets/images/artificial-intelligence.png" />
                 </button>
-                <p class="title">Inteligência Artificial</p>
+                <p class="title">I.A</p>
                 <p class="text">Todos os seus sites favoritos em um só lugar.</p>
             </div>
 
             <div class="card">
-                <button type="button" class="icon btn-show-section4">
-                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" height="38px"
-                        width="38px" version="1.1" id="jobs" viewBox="0 0 471.701 471.701" xml:space="preserve">
-                        <linearGradient id="gradientColor">
-                            <stop offset="5%" stop-color="#7eaaff"></stop>
-                            <stop offset="95%" stop-color="#ff48fb"></stop>
-                        </linearGradient>
-                        <g>
-                            <img alt="Trabalhos" src="assets/images/job.png" />
-                        </g>
-                    </svg>
+                <button type="button" class="icon btn-show-section4"
+                    aria-label="Trabalhos: Acesse seus sites de trabalho favoritos">
+                    <img alt="Trabalhos" src="assets/images/job.png" />
                 </button>
                 <p class="title">Trabalhos</p>
                 <p class="text">Todos os seus sites favoritos em um só lugar.</p>
             </div>
+
+            <!-- Sections for different categories, initially hidden -->
+            <div class="sections">
+                <div class="section1 hidden">
+                    <div class="botoes-estudos main"></div>
+                </div>
+                <div class="section2 hidden">
+                    <div class="botoes-programacao main"></div>
+                </div>
+                <div class="section3 hidden">
+                    <div class="botoes-inteligencia-artificial main"></div>
+                </div>
+                <div class="section4 hidden">
+                    <div class="botoes-trabalho main"></div>
+                </div>
+            </div>
         </div>
 
-        <div></div>
-        <div></div>
-
-        <!-- Sections for different categories, initially hidden -->
-        <div class="sections">
-            <div class="section1 hidden">
-                <div class="botoes-estudos main"></div>
-            </div>
-            <div class="section2 hidden">
-                <div class="botoes-programacao main"></div>
-            </div>
-            <div class="section3 hidden">
-                <div class="botoes-inteligencia-artificial main"></div>
-            </div>
-            <div class="section4 hidden">
-                <div class="botoes-trabalho main"></div>
-            </div>
-        </div>
-    </div>
-    <script src="js/main.js"></script>
+        <script src="js/theme.js"></script>
+        <script src="js/relogio.js"></script>
+        <script src="js/buttons.js"></script>
 </body>
+
 </html>

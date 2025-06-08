@@ -1,0 +1,52 @@
+:root {
+    --bg-gradient: linear-gradient(120deg, #162447 0%, #1f4068 40%, #21e6c1 100%);
+    --card-bg: rgba(30, 32, 48, 0.55);
+    --toggle-bg: rgba(255, 255, 255, 0.85);
+    --text-color: #fff;
+    --icon-gradient: linear-gradient(120deg, #ffb347 5%, #21e6c1 95%);
+}
+
+body.light-mode {
+    --bg-gradient: linear-gradient(120deg, #e6f0ff 0%, #b3e0ff 50%, #e0ffe6 100%);
+    --card-bg: rgba(255, 255, 255, 0.85);
+    --toggle-bg: rgba(30, 32, 48, 0.55);
+    --text-color: #232946;
+    --icon-gradient: linear-gradient(120deg, #7eaaff 5%, #ff48fb 95%);
+}
+
+/* Gradiente de fundo: tecnologia, disciplina e dedicação */
+body {
+    min-height: 100vh;
+    min-width: 100vw;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* Gradiente com azul escuro (foco/disciplina), azul claro (tecnologia) e verde (dedicação/progresso) */
+    background: var(--bg-gradient);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: var(--text-color);
+    /* fallback para navegadores antigos */
+    background-color: #162447;
+    /* Ajuste geral do body para evitar scroll horizontal */
+    overflow-x: hidden;
+    
+}
+
+#toggle-theme {
+    position: absolute;
+    top: 10%;
+    right: 9%;
+    z-index: 99;
+    border: none;
+    background: var(--toggle-bg);
+    border-radius: 50%;
+    width: 44px;
+    height: 44px;
+    box-shadow: 0 2px 8px #0002;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

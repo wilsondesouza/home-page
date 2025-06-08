@@ -1,0 +1,114 @@
+/* Description: Cards CSS file */
+
+/*****************************************
+Table Of Contents:
+- Cards
+*****************************************/
+
+/* Cards de categorias com visual moderno, glassmorphism, hover animado e responsividade */
+
+.hotspot {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 2.2rem;
+    margin: -0.5rem auto 2rem auto;
+    flex-wrap: wrap;
+    z-index: 2;
+}
+
+.card {
+    background: var(--card-bg);
+    color: var(--text-color);
+    box-shadow: 0 8px 32px 0 rgba(127, 72, 251, 0.10);
+    backdrop-filter: blur(10px);
+    border-radius: 1.5rem;
+    padding: 2.2rem 1.5rem 1.3rem 1.5rem;
+    min-width: 170px;
+    max-width: 210px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1.5px solid rgba(255,255,255,0.18);
+    transition: 
+        box-shadow 0.3s, 
+        transform 0.18s cubic-bezier(.4,2,.6,1), 
+        border-color 0.2s;
+    position: relative;
+    cursor: pointer;
+}
+
+.card:hover, .card:focus-within {
+    box-shadow: 0 1px 6px 0 #0d6efd, 1px 1px 10px #0d6efd in t;
+    transform: translateY(-8px) scale(1.045);
+    z-index: 3;
+}
+
+.card .icon {
+    background: linear-gradient(120deg, #ffb347 5%, #21e6c1 95%);
+    border-radius: 50%;
+    width: 64px;
+    height: 64px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1.1rem;
+    box-shadow: 0 2px 12px 0 #7eaaff33;
+    border: none;
+    transition: box-shadow 0.2s, transform 0.18s;
+    outline: none;
+    position: relative;
+    cursor: pointer;
+}
+
+.card .icon svg, .card .icon img {
+    width: 38px;
+    height: 38px;
+    display: block;
+    filter: drop-shadow(0 2px 8px #0002);
+    pointer-events: none;
+}
+
+.card .title {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.18rem;
+    font-weight: 600;
+    color: var(--text-color);
+    margin: 0.2rem 0 0.3rem 0;
+    letter-spacing: 0.04em;
+    text-align: center;
+    text-shadow: 0 1px 8px #7eaaff33;
+}
+
+.card .text {
+    font-size: 0.98rem;
+    color: var(--text-color);
+    text-align: center;
+    margin: 0 0 0.2rem 0;
+    opacity: 0.92;
+    line-height: 1.35;
+}
+
+/* Tooltip para descrição extra ao passar o mouse */
+.card .icon[aria-label]:hover::after,
+.card .icon[aria-label]:focus::after {
+    content: attr(aria-label);
+    position: absolute;
+    left: 50%;
+    top: 110%;
+    transform: translateX(-50%);
+    background: rgba(30,32,48,0.92);
+    color: #fff;
+    font-size: 0.92rem;
+    padding: 0.45rem 1rem;
+    border-radius: 1rem;
+    white-space: nowrap;
+    box-shadow: 0 2px 12px #0003;
+    z-index: 10;
+    pointer-events: none;
+    opacity: 1;
+    transition: opacity 0.2s;
+}
+
+
+

@@ -1,0 +1,88 @@
+/* Description: Relógio CSS file */
+
+/*****************************************
+Table Of Contents:
+- Relógio
+- Reward Button
+*****************************************/
+
+/* Relógio centralizado, moderno, com animação e glassmorphism */
+.pre-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 1rem 0 1rem 0;
+}
+
+.wrapper {
+    background: var(--card-bg);
+    color: var(--text-color);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.18);
+    backdrop-filter: blur(12px);
+    border-radius: 1.5rem;
+    padding: 1.2rem 2.8rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1.5px solid rgba(255,255,255,0.18);
+    position: relative;
+    min-width: 180px;
+    transition: box-shadow 0.3s;
+}
+
+.wrapper:hover {
+    box-shadow: 0 1px 6px 0 #0d6efd, 1px 1px 10px #0d6efd inset;
+}
+
+.display {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#time {
+    font-family: 'Poppins', monospace, sans-serif;
+    font-size: 2.8rem;
+    font-weight: 600;
+    color: var(--text-color);
+    letter-spacing: 0.08em;
+    text-shadow: 0 2px 32px #0d6efd, 0 1px 0 #0d6efd;
+    animation: glow 2s infinite alternate;
+    user-select: none;
+}
+
+
+/* Data abaixo do relógio (adicione no HTML se desejar) */
+#date {
+    font-size: 1.05rem;
+    color: var(--text-color);
+    margin-top: 0.3rem;
+    letter-spacing: 0.04em;
+    font-weight: 400;
+    opacity: 0.85;
+}
+
+/* Relógio centralizado, moderno, com animação e glassmorphism */
+
+.pre-reward {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+
+.reward {
+    display: grid;
+    right: 0rem;
+    justify-content: center;
+    
+}
+
+.reward button {
+    background-color: transparent;
+    border: none;
+}
+
+.reward button img {
+    height: 32px;
+    cursor: pointer;
+}
